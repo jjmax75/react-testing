@@ -9,6 +9,14 @@ describe( '<TodoApp /> basic/shallow tests', () => {
 	
 	const wrapper = shallow( <TodoApp /> );
 	
+	it( 'Should be the same', () => {
+		expect( 1 ).to.equal( 1 );
+	});
+	
+	it( 'Renders the component', () => {
+		expect( wrapper ).to.be.defined;
+	});
+	
 	it( 'Should have an h3 tag', () => {
 		expect( wrapper.find( 'h3' ) ).to.have.length( 1 );
 	});
@@ -52,13 +60,5 @@ describe( '<TodoApp /> mount tests', () => {
 		wrapper.state().items.push( item );
 		expect( wrapper.state().items.length).to.equal( 1 );
 	});
-	
-	it( 'Should register a click on the add button', () => {
-		const handleSubmit = sinon.spy();
-		const wrapper = mount( <TodoApp /> );
-		wrapper.find( 'button' ).simulate( 'click' );
-		expect(handleSubmit.calledOnce).to.equal( true );
-	});
-
 });
 
