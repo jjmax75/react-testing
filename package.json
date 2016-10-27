@@ -5,7 +5,15 @@
   "main": "app.js",
   "scripts": {
     "mocha": "mocha -w test/mocha/helpers/browser.js test/mocha/tests/*.spec.js",
-    "karma": "karma start ./test/karma/karma.conf.js"
+    "karma": "karma start ./test/karma/karma.conf.js",
+    "ava": "ava || true"
+  },
+  "ava": {
+    "require": [ "babel-register" ],
+    "babel": "inherit",
+    "files": [ "./test/ava/tests/*.js" ],
+    "tap": false,
+    "verbose": true
   },
   "author": "John Behan",
   "license": "ISC",
@@ -16,6 +24,7 @@
     "redux": "^3.6.0"
   },
   "devDependencies": {
+    "ava": "^0.16.0",
     "babel-core": "^6.18.0",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.18.0",
