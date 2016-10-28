@@ -2,7 +2,7 @@ import test from 'ava';
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import TodoApp from '../../../src/js/TodoApp';
+import TodoApp from '../../../src/js/components/App';
 
 test( '<TodoApp /> basic/shallow tests', t => {
 	const wrapper = shallow( <TodoApp /> );

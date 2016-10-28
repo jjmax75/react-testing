@@ -2,7 +2,7 @@ import React from 'react';
 import TestUtils from 'react/lib/ReactTestUtils';
 import expect from 'expect';
 
-import TodoApp from '../../../src/js/TodoApp';
+import TodoApp from '../../../src/js/components/App';
 
 describe( '<TodoApp /> basic/shallow tests', () => {
 	

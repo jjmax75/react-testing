@@ -1,5 +1,3 @@
-require('babel-register')();
-
 const jsdom = require('jsdom').jsdom;
 
 const exposedProperties = ['window', 'navigator', 'document'];
@@ -16,5 +14,3 @@ Object.keys(document.defaultView).forEach((property) => {
 global.navigator = {
 	userAgent: 'node.js'
 };
-
-documentRef = document;

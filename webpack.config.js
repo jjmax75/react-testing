@@ -1,5 +1,5 @@
 module.exports = {
-    entry: './app.js',
+    entry: './src/js/app.js',
     output: {
         filename: './bundle/main.js'
     },
@@ -20,8 +20,8 @@ module.exports = {
         extensions: [ '', '.js', '.jsx' ]
     },
     externals: {
-        'cheerio': 'window',
+        'react/addons': true,
         'react/lib/ExecutionEnvironment': true,
-        'react/lib/ReactContext': true,
+        'react/lib/ReactContext': true
     }
 };

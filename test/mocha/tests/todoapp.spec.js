@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import expect from 'expect';
-import TodoApp from '../../../src/js/TodoApp';
+import TodoApp from '../../../src/js/components/App';
 
 describe( '<TodoApp /> basic/shallow tests', () => {
 	

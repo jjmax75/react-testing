@@ -2,7 +2,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import expect from 'expect';
 
-import TodoList from '../../../src/js/TodoList';
+import TodoList from '../../../src/js/components/TodoList';
 
 describe( '<TodoList /> basic/shallow tests', () => {
 	const items = [];
